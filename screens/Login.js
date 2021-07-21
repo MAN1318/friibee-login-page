@@ -21,7 +21,7 @@ const Login = props => {
                 <View style={{width: '90%'}}>
                     <Text style={[styles.textBody], {alignSelf: 'flex-end'}}>Forgot Username or Password?</Text>
                 </View>
-                <Submit title="LOG IN" color="#D2573C" />
+                <Submit title="LOG IN" color="#F26530" />
                 <Text style={styles.textBody}>or connect using</Text>
                 <View style={{flexDirection: 'row'}}>
                     <Account color="#ec482f" icon="google" title="Google" />

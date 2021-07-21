@@ -16,7 +16,7 @@ const SignUp = props => {
                 <Input name="PHONE" icon="phone" />
                 <Input name="PASSWORD" icon="lock" pass={true} />
                 <Input name="CONFIRM PASSWORD" icon="lock" pass={true} />
-                <Submit color="#AA156E" title="CREATE NEW ACCOUNT" />
+                <Submit color="#F26530" title="CREATE NEW ACCOUNT" />
                 <View style={{flexDirection: 'row'}}>
                     <Text style={styles.textBody}>Already a member? </Text>
                     <Text style={[styles.textBody, {color: '#972910'}]} onPress={() => props.navigation.navigate('Home')}> Sign In</Text>
