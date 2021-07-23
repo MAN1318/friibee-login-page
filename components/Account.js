@@ -7,19 +7,20 @@ const Account = props => {
     return (
         <TouchableOpacity style={[styles.container, {backgroundColor: props.color}]}>
             <Icon style={styles.accIcon} name={props.icon} />
-            <Text style={styles.textTitle}>{props.title}</Text>
-        </TouchableOpacity>
+                  </TouchableOpacity>
     );  
 };
 
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        width: 135,
-        height: 45,
+        width: 50,
+        height: 50,
         marginHorizontal: 10,
         marginVertical: 10,
-        borderRadius: 5,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     accIcon: {
         color: 'white',

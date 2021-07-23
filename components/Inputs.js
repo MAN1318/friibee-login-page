@@ -12,7 +12,7 @@ class Inputs extends Component {
 
     render() {
         return(
-            <View style={[styles.container, {borderColor: this.state.isFocused ? '#0779ef': '#eee'}]}>
+            <View style={[styles.container, {borderColor: this.state.isFocused ? '#F26530': '#F26530'}]}>
                 <Input 
                     placeholder={this.props.name}
                     onFocus={this.onFocusChange}
@@ -23,7 +23,7 @@ class Inputs extends Component {
                         <Icon 
                             name={this.props.icon}
                             size={22}
-                            color={this.state.isFocused ? '#0779e4' : 'grey'}
+                            color={this.state.isFocused ? '#F26530' : '#F26530'}
                         />
                     }
                 />
@@ -38,14 +38,24 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 100,
         marginVertical: 5,
-        borderWidth: 3.5
+        // borderWidth: 3.5,
+        backgroundColor:"#F2653029",
+        shadowColor: "#000000",
+        shadowOpacity: 0.3,
+        // elevation: 0.1,
+        shadowRadius: 5,
+        shadowOffset: {
+        height: 1,
+         width: 1
+        }
     },
     inputContainer: {
         borderBottomWidth: 0
     },
     inputText: {
-        color: '#0779e4',
-        fontWeight: 'bold',
+        fontFamily: 'Gilroy',
+        color: 'black',
+        // fontWeight: 'bold',
         marginLeft: 5,
         
     }

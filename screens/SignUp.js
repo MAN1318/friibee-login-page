@@ -9,8 +9,8 @@ const SignUp = props => {
         <ScrollView style={{backgroundColor: 'white'}}>
             <View style={styles.container}> 
                 <Image source={require('../assets/friibee_back_white1.png')} resizeMode="center" style={styles.image} />
-                <Text style={styles.textTitle}>Let's Get Started!</Text>
-                <Text style={styles.textBody}>Create an account to get access to all features</Text>
+                {/* <Text style={styles.textTitle}>Let's Get Started!</Text>
+                <Text style={styles.textBody}>Create an account to get access to all features</Text> */}
                 <Input name="USERNAME" icon="user" />
                 <Input name="EMAIL" icon="envelope" />
                 <Input name="PHONE" icon="phone" />
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        marginTop: 40,
     },
     image: {
         width: 200,

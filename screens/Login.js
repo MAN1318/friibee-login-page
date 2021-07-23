@@ -8,14 +8,14 @@ import Account from '../components/Account';
 const Login = props => {
     return (
         <ScrollView style={{backgroundColor: 'white'}}>
-            <View style={styles.container}>
+            <View  style={styles.container}>
                 <Image 
                     source={require('../assets/friibee_back_white1.png')} 
                     resizeMode="center" 
                     style={styles.image} />
-                <Text style={styles.textTitle}>Welcome back!</Text>
-                <Text style={styles.textBody}>Log into your existing account</Text>
-                <View style={{marginTop: 20}} />
+                {/* <Text style={styles.textTitle}>Welcome back!</Text> */}
+                {/* <Text style={styles.textBody}>Log into your existing account</Text> */}
+                <View style={{marginTop: 5}} />
                 <Inputs name="EMAIL or USERNAME" icon="user" />
                 <Inputs name="PASSWORD" icon="lock" pass={true} />
                 <View style={{width: '90%'}}>
@@ -24,9 +24,9 @@ const Login = props => {
                 <Submit title="LOG IN" color="#F26530" />
                 <Text style={styles.textBody}>or connect using</Text>
                 <View style={{flexDirection: 'row'}}>
-                    <Account color="#ec482f" icon="google" title="Google" />
-                    <Account color="#3b5c8f" icon="facebook" title="Facebook" />
-                    <Account color="gray" icon="apple" title="Apple" />
+                    <Account color="#ec482f" icon="google"  />
+                    <Account color="#3b5c8f" icon="facebook" />
+                    <Account color="gray" icon="apple"  />
                 </View>
                 <View style={{flexDirection: 'row', marginVertical: 5}}>
                     <Text style={styles.textBody}>Don't have an account? </Text>
@@ -41,20 +41,24 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: 40,
     },
     image: {
         width: 200,
         height: 200,
-        marginVertical: 10
+        marginTop:25,
+        
     },
     textTitle: {
-        fontFamily: 'Foundation',
+        fontFamily: 'Gilroy',
         fontSize: 40,
-        marginVertical: 10,
+        marginTop: -10,
+        marginBottom: 10,
+        fontWeight: 'bold',
     },
     textBody: {
-        fontFamily: 'Foundation',
+        fontFamily: 'Gilroy',
         fontSize: 16
     }
 });
