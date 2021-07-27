@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
         
     },
     textTitle: {
-        fontFamily: 'Gilroy',
+        fontFamily: 'Nunito',
         fontSize: 40,
         marginTop: -10,
         marginBottom: 10,
         fontWeight: 'bold',
     },
     textBody: {
-        fontFamily: 'Gilroy',
+        fontFamily: 'Nunito',
         fontSize: 16
     }
 });
