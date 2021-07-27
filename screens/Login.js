@@ -7,21 +7,25 @@ import Account from '../components/Account';
 
 const Login = props => {
     return (
-        <ScrollView style={{backgroundColor: 'white'}}>
-            <View  style={styles.container}>
+        <ScrollView style={{backgroundColor:'#F26530' }}  >
+            <View  style={styles.topcontainer}>
                 <Image 
-                    source={require('../assets/friibee_back_white1.png')} 
+                    source={require('../assets/friibee.png')} 
                     resizeMode="center" 
                     style={styles.image} />
+            </View>
+            <View  style={styles.bottomcontainer}>
+                
                 {/* <Text style={styles.textTitle}>Welcome back!</Text> */}
                 {/* <Text style={styles.textBody}>Log into your existing account</Text> */}
-                <View style={{marginTop: 5}} />
+                <View style={{marginTop: 15}} />
                 <Inputs name="EMAIL or USERNAME" icon="user" />
                 <Inputs name="PASSWORD" icon="lock" pass={true} />
                 <Submit title="LOG IN" color="#F26530" />
+                
                 <View style={{width: '90%', marginTop: 10, marginBottom: 10, flexDirection: 'row'}}>
                     <View style={{flex:1}}>
-                        <Text style={[styles.textBody, {alignSelf: 'flex-start'}, {fontSize: 14}]}>Remember me</Text>
+                    <Text style={[styles.textBody, {alignSelf: 'flex-start'}, {fontSize: 14}]}>Remember me</Text>
                     </View>
                     <View>
                     <Text style={[styles.textBody, {color: '#F26530'} , {alignSelf: 'flex-end'}, {fontSize: 14}]}>Forgot Password?</Text>
@@ -43,21 +47,33 @@ const Login = props => {
                     <Account color="#3b5c8f" icon="facebook" />
                     <Account color="gray" icon="apple"  />
                 </View>
+                
                 <View style={{flexDirection: 'row', marginVertical: 5}}>
                     <Text style={styles.textBody}>Don't have an account? </Text>
                     <Text style={[styles.textBody, {color: '#D2573C'}]} onPress={() => props.navigation.navigate('SignUp')}> Sign Up</Text>
                 </View>
+                
             </View>
-        </ScrollView>      
+            </ScrollView>      
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
+    topcontainer: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 40,
+        marginTop: 0,
+        backgroundColor:'#F26530', 
+    },
+    bottomcontainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 0,
+        borderTopStartRadius: 40,
+        borderTopEndRadius: 40,
+        backgroundColor: 'white',
     },
     image: {
         width: 200,
