@@ -6,9 +6,14 @@ import Submit from '../components/Submit';
 
 const SignUp = props => {
     return (
-        <ScrollView style={{backgroundColor: 'white'}}>
-            <View style={styles.container}> 
-                <Image source={require('../assets/friibee_back_white1.png')} resizeMode="center" style={styles.image} />
+        <View style={{backgroundColor: '#F26530', flex: 1}}>
+             <View  style={styles.topcontainer}>
+                <Image 
+                    source={require('../assets/friibee.png')} 
+                    resizeMode="center" 
+                    style={styles.image} />
+            </View>
+            <View style={styles.bottomcontainer}> 
                 {/* <Text style={styles.textTitle}>Let's Get Started!</Text>
                 <Text style={styles.textBody}>Create an account to get access to all features</Text> */}
                 <Input name="USERNAME" icon="user" />
@@ -24,15 +29,27 @@ const SignUp = props => {
                 </View>
             </View>
             
-        </ScrollView>    
+        </View>    
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
+    topcontainer: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 40,
+        justifyContent: 'center',
+        marginTop: 20,
+        backgroundColor:'#F26530', 
+    },
+    bottomcontainer: {
+        flex: 3,
+        alignItems: 'center',
+        //justifyContent: 'center',
+        marginTop: 0,
+        paddingTop: 15,
+        borderTopStartRadius: 40,
+        borderTopEndRadius: 40,
+        backgroundColor: 'white',
     },
     image: {
         width: 200,

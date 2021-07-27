@@ -7,7 +7,7 @@ import Account from '../components/Account';
 
 const Login = props => {
     return (
-        <ScrollView style={{backgroundColor:'#F26530' }}  >
+        <View style={{backgroundColor:'#F26530', flex:1 }}  >
             <View  style={styles.topcontainer}>
                 <Image 
                     source={require('../assets/friibee.png')} 
@@ -18,7 +18,7 @@ const Login = props => {
                 
                 {/* <Text style={styles.textTitle}>Welcome back!</Text> */}
                 {/* <Text style={styles.textBody}>Log into your existing account</Text> */}
-                <View style={{marginTop: 15}} />
+                <View style={{marginTop: 20}} />
                 <Inputs name="EMAIL or USERNAME" icon="user" />
                 <Inputs name="PASSWORD" icon="lock" pass={true} />
                 <Submit title="LOG IN" color="#F26530" />
@@ -54,7 +54,7 @@ const Login = props => {
                 </View>
                 
             </View>
-            </ScrollView>      
+            </View>      
     );
 };
 
@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
         backgroundColor:'#F26530', 
     },
     bottomcontainer: {
-        flex: 1,
+        flex: 2,
         alignItems: 'center',
-        justifyContent: 'center',
+        //justifyContent: 'center',
         marginTop: 0,
         borderTopStartRadius: 40,
         borderTopEndRadius: 40,
