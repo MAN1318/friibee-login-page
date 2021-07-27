@@ -41,12 +41,12 @@ const styles = StyleSheet.create({
     },
     textTitle: {
         fontSize: 40,
-        fontFamily: 'Foundation',
+        fontFamily: 'Nunito',
         //marginVertical: 10,
     },
     textBody: {
         fontSize: 16,
-        fontFamily: 'Foundation',
+        fontFamily: 'Nunito',
         marginBottom: 15,
     }
 });

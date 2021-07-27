@@ -18,12 +18,27 @@ const Login = props => {
                 <View style={{marginTop: 5}} />
                 <Inputs name="EMAIL or USERNAME" icon="user" />
                 <Inputs name="PASSWORD" icon="lock" pass={true} />
-                <View style={{width: '90%'}}>
-                    <Text style={[styles.textBody], {alignSelf: 'flex-end'}}>Forgot Username or Password?</Text>
-                </View>
                 <Submit title="LOG IN" color="#F26530" />
-                <Text style={styles.textBody}>or connect using</Text>
-                <View style={{flexDirection: 'row'}}>
+                <View style={{width: '90%', marginTop: 10, marginBottom: 10, flexDirection: 'row'}}>
+                    <View style={{flex:1}}>
+                        <Text style={[styles.textBody, {alignSelf: 'flex-start'}, {fontSize: 14}]}>Remember me</Text>
+                    </View>
+                    <View>
+                    <Text style={[styles.textBody, {color: '#F26530'} , {alignSelf: 'flex-end'}, {fontSize: 14}]}>Forgot Password?</Text>
+                     </View>
+                </View>
+                
+                <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 30, marginBottom: 20}}>
+                 <View style={{flex: 1, height: 1}} />
+                 <View style={{flex: 2, height: 1, backgroundColor: 'black'}} />
+                 <View>
+                 <Text style={styles.textBody}>   or   </Text>
+                </View>
+                <View style={{flex: 2, height: 1, backgroundColor: 'black'}} />
+                <View style={{flex: 1, height: 1}} />
+                </View>
+                
+                <View style={{flexDirection: 'row', marginBottom:10}}>
                     <Account color="#ec482f" icon="google"  />
                     <Account color="#3b5c8f" icon="facebook" />
                     <Account color="gray" icon="apple"  />

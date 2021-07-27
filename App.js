@@ -8,7 +8,8 @@
 
  import React from 'react';
  import {View, StyleSheet} from 'react-native';
- 
+ import { useFonts, Nunito } from '@expo-google-fonts/nunito';
+
  import Navigation from './Navigation';
  
  const App: () => React$Node = () => {
