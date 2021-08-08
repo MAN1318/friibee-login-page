@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#F2653029",
         shadowColor: "#000000",
         shadowOpacity: 0.3,
-        // elevation: 0.1,
+        elevation: 40,
         shadowRadius: 5,
         shadowOffset: {
         height: 1,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0
     },
     inputText: {
-        fontFamily: 'Gilroy',
+        fontFamily: 'Nunito',
         color: 'black',
         // fontWeight: 'bold',
         marginLeft: 5,
